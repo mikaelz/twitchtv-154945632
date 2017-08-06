@@ -9,8 +9,8 @@ Install yarn
 
 `npm install -g yarn`
 
-Add frameworks
-`yarn add express morgan`
+Install packages
+`yarn add express morgan sequelize mysql2`
 
 ## Development
 `yarn add --dev babel-cli babel-preset-es2015`
