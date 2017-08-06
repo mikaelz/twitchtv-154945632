@@ -1,0 +1,29 @@
+{
+  "name": "twitchtv-154945632",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist/ && babel ./src --out-dir dist/ --ignore ./node_modules,./.babelrc,./.gitignore,./package.json --copy-files",
+    "start": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikaelz/twitchtv-154945632.git"
+  },
+  "keywords": [],
+  "author": "Michal Zuber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikaelz/twitchtv-154945632/issues"
+  },
+  "homepage": "https://github.com/mikaelz/twitchtv-154945632#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "morgan": "^1.8.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
