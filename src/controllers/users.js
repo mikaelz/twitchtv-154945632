@@ -1,5 +1,9 @@
+import { User } from "../models"
+
 function getAllUsers(req, res, next) {
-  res.send('Users');
+  User.findAll().then((users) => {
+    res.send(JSON.stringify(users));
+  });
 }
 
 export {
